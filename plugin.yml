@@ -1,0 +1,9 @@
+name: Messenger
+version: 1
+main: me.genn.messenger.Messenger
+
+commands:
+    pm:
+        description: Personal message
+    read:
+        read: read lol

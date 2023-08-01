@@ -1,0 +1,6 @@
+datacenter: "US"
+database:
+    host: localhost
+    user: bruce
+    pass: willakers
+    db: brucesgym
