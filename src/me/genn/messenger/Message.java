@@ -18,8 +18,8 @@ public class Message {
     public String senderUUID;
     public String receiverUUID;
     public String sendTime;
-    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy");
     public String title;
+    public int read;
 
     public Message() {
     }
@@ -28,9 +28,10 @@ public class Message {
         YamlConfiguration config = new YamlConfiguration();
         config.set("senderUUID", this.senderUUID);
         config.set("receiverUUID", this.receiverUUID);
-        config.set("text", Arrays.asList(this.text));
+        config.set("text", (this.text));
         config.set("time", this.sendTime);
         config.set("title", this.title);
+        config.set("read", this.read);
         return config.saveToString();
     }
 
@@ -47,11 +48,14 @@ public class Message {
         Message message = new Message();
         message.senderUUID = config.getString("senderUUID");
         message.receiverUUID = config.getString("receiverUUID");
-        message.text = (List<String>) config.getList("text", new ArrayList());
+        message.text = (List<String>) config.getStringList("text");
         message.sendTime = config.getString("time");
         message.title = config.getString("title");
+        message.read = config.getInt("read");
         return message;
     }
+    
+    
     
     
 }

@@ -2,8 +2,22 @@ name: Messenger
 version: 1
 main: me.genn.messenger.Messenger
 
+depend: [GennsGym, ChatControl]
+
 commands:
-    pm:
+    mail:
         description: Personal message
     read:
         read: read lol
+    mailbox:
+        description: Mailbox
+    friendlist:
+        aliases: [friends, listfriends]
+    friendadd:
+        aliases: [friend, addfriend]
+    friendrem:
+        aliases: [unfriend, remfriend, removefriend, friendremove]
+    friendgoto:
+        aliases: [goto, gotofriend]
+    friendmsg:
+        aliases: [fmsg, fpm, fw, fm]

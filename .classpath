@@ -9,5 +9,7 @@
 	<classpathentry kind="lib" path="D:/Main Directory/MC/plugin jars/server jar/custom-java13.jar"/>
 	<classpathentry kind="lib" path="D:/Main Directory/MC/plugin jars/ProtocolLib (7).jar"/>
 	<classpathentry kind="lib" path="D:/Main Directory/MC/plugin jars/MagicSpells-3.5-dev-1608271824.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/GennsGymUpdated.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/ChatControlNew.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
